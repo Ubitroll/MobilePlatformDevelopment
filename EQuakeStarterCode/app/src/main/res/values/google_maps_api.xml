@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+
+    Name: Stephen Cartner
+    Student Id: S1706321
+
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDA671YYoqr4owvevMZMVF9OVHVLKBa_dQ</string>
+
+</resources>

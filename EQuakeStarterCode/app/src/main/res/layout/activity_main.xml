@@ -1,0 +1,531 @@
+<!--
+
+Name: Stephen Cartner
+Student Id: S1706321
+
+-->
+
+<ViewFlipper
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewFlipper1"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:inAnimation="@android:anim/slide_in_left"
+    >
+<!-- -->
+    <RelativeLayout
+        tools:context=".MainActivity"
+        android:id="@+id/relativeView1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:id="@+id/studentId"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Student Id: S1706321"
+            />
+
+        <TextView
+            android:id="@+id/salutation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/studentId"
+            android:text="Welcome to Mobile Platform Development"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/salutation"
+            android:text="Press to get data" />
+
+        <Button
+            android:id="@+id/dateSearch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/startButton"
+            android:text="Search by Date" />
+
+        <TextView
+            android:id="@+id/listTop1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/dateSearch"
+            android:textSize="20sp" />
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/listTop1"
+            android:layout_alignBottom="@+id/listBottom1" />
+
+        <TextView
+            android:id="@+id/listBottom1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_above="@+id/acknowledgement"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/acknowledgement"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Contains British Geological Survey materials ©NERC 2019"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        tools:context=".MainActivity"
+        android:id="@+id/relativeView2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:id="@+id/studentIdClicked"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Student Id: S1706321"
+            />
+
+        <TextView
+            android:id="@+id/salutationClicked"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/studentIdClicked"
+            android:text="This page will show you a more detailed description of the earthquakes"
+            />
+
+        <TextView
+            android:id="@+id/locationClicked"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/salutationClicked"
+            android:layout_alignParentLeft="true"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/dateClicked"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/locationClicked"
+            android:layout_alignParentLeft="true"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/timeClicked"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dateClicked"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/depthClicked"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timeClicked"
+            android:layout_alignParentLeft="true"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/magnitudeClicked"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/depthClicked"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/latitudeClicked"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/magnitudeClicked"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/longitudeClicked"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/latitudeClicked"
+            android:text=""/>
+
+        <Button
+            android:id="@+id/mapViewButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/returnButton"
+            android:layout_below="@id/longitudeClicked"
+            android:text="Press to See Map"/>
+
+        <Button
+            android:id="@+id/returnButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/acknowledgmentClicked"
+            android:text="Return To List"/>
+
+        <TextView
+            android:id="@+id/acknowledgmentClicked"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Contains British Geological Survey materials ©NERC 2019"
+            android:textSize="20sp" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        tools:context=".MainActivity"
+        android:id="@+id/relativeView3"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:id="@+id/studentIdMap"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Student Id: S1706321"
+            />
+
+        <TextView
+            android:id="@+id/salutationMap"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/studentIdMap"
+            android:text="This page will show the location of the earthquake on the map"
+            />
+
+        <fragment android:id="@+id/googleMap"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/returnDescription"
+            android:layout_below="@+id/salutationMap"
+            tools:context="com.google.android.gms.maps.SupportMapFragment"/>
+
+
+        <Button
+            android:id="@+id/returnDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/acknowledgementMap"
+            android:text="Return To List"/>
+
+        <TextView
+            android:id="@+id/acknowledgementMap"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Contains British Geological Survey materials ©NERC 2019"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        tools:context=".MainActivity"
+        android:id="@+id/relativeView4"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/studentIdDate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Student Id: S1706321"
+            />
+
+        <Button
+            android:id="@+id/singleDateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/studentIdDate"
+            android:layout_alignParentLeft="true"
+            android:text="Pick Specific Date"
+            android:textSize="10dp"/>
+
+        <Button
+            android:id="@+id/dateRangeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/studentIdDate"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/singleDateButton"
+            android:text="Choose Range of Dates"
+            android:textSize="10dp"/>
+
+        <TextView
+            android:id="@+id/dateSelectedText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/singleDateButton"
+            android:layout_alignParentLeft="true"
+            android:text="Date Chosen: "
+            android:textAlignment="center"/>
+
+        <ImageView
+            android:id="@+id/magnitudeImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dateSelectedText"
+            app:srcCompat="@drawable/largest_magnitude"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/magnitudeImage"
+            android:layout_alignLeft="@id/magnitudeImage"
+            android:layout_alignRight="@id/magnitudeImage"
+            android:layout_alignBottom="@id/magnitudeImage"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:text="Largest"
+            android:textColor="@color/White"
+            />
+
+        <Button
+            android:id="@+id/largestMagnitudeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dateSelectedText"
+            android:layout_toRightOf="@+id/magnitudeImage"
+            android:layout_alignBottom="@id/magnitudeImage"
+            android:layout_alignParentRight="true"
+            android:text="Location: Test Test Test \n Lat/Long: 30, 30 \n Magnitude: 1.2 \n Depth: 6km"
+            android:textSize="10dp"/>
+
+        <ImageView
+            android:id="@+id/northImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/magnitudeImage"
+            app:srcCompat="@drawable/compass_north"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/northImage"
+            android:layout_alignLeft="@id/northImage"
+            android:layout_alignRight="@id/northImage"
+            android:layout_alignBottom="@id/northImage"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:text="Most North"
+            android:textColor="@color/White"
+            />
+
+        <Button
+            android:id="@+id/mostNorthButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/largestMagnitudeButton"
+            android:layout_toRightOf="@+id/northImage"
+            android:layout_alignBottom="@id/northImage"
+            android:layout_alignParentRight="true"
+            android:text="Location: Test Test Test \n Lat/Long: 30, 30 \n Magnitude: 1.2 \n Depth: 6km"
+            android:textSize="10dp"/>
+
+        <ImageView
+            android:id="@+id/southImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/northImage"
+            app:srcCompat="@drawable/compass_south"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/southImage"
+            android:layout_alignLeft="@id/southImage"
+            android:layout_alignRight="@id/southImage"
+            android:layout_alignBottom="@id/southImage"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:text="Most South"
+            android:textColor="@color/White"
+            />
+
+        <Button
+            android:id="@+id/mostSouthButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mostNorthButton"
+            android:layout_toRightOf="@+id/southImage"
+            android:layout_alignBottom="@id/southImage"
+            android:layout_alignParentRight="true"
+            android:text="Location: Test Test Test \n Lat/Long: 30, 30 \n Magnitude: 1.2 \n Depth: 6km"
+            android:textSize="10dp"/>
+
+        <ImageView
+            android:id="@+id/eastImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/southImage"
+            app:srcCompat="@drawable/compass_right"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/eastImage"
+            android:layout_alignLeft="@id/eastImage"
+            android:layout_alignRight="@id/eastImage"
+            android:layout_alignBottom="@id/eastImage"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:text="Most\nEast"
+            android:textColor="@color/White"
+            />
+
+        <Button
+            android:id="@+id/mostEastButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mostSouthButton"
+            android:layout_toRightOf="@+id/eastImage"
+            android:layout_alignBottom="@id/eastImage"
+            android:layout_alignParentRight="true"
+            android:text="Location: Test Test Test \n Lat/Long: 30, 30 \n Magnitude: 1.2 \n Depth: 6km"
+            android:textSize="10dp"/>
+
+        <ImageView
+            android:id="@+id/westImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/eastImage"
+            app:srcCompat="@drawable/compass_left"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/westImage"
+            android:layout_alignLeft="@id/westImage"
+            android:layout_alignRight="@id/westImage"
+            android:layout_alignBottom="@id/westImage"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:text="Most\nWest"
+            android:textColor="@color/White"
+            />
+
+        <Button
+            android:id="@+id/mostWestButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mostEastButton"
+            android:layout_toRightOf="@+id/westImage"
+            android:layout_alignBottom="@id/westImage"
+            android:layout_alignParentRight="true"
+            android:text="Location: Test Test Test \n Lat/Long: 30, 30 \n Magnitude: 1.2 \n Depth: 6km"
+            android:textSize="10dp"/>
+
+        <ImageView
+            android:id="@+id/deepestImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/westImage"
+            app:srcCompat="@drawable/deepest_earthquake"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/deepestImage"
+            android:layout_alignLeft="@id/deepestImage"
+            android:layout_alignRight="@id/deepestImage"
+            android:layout_alignBottom="@id/deepestImage"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:text="Deepest"
+            android:textColor="@color/White"
+            />
+
+        <Button
+            android:id="@+id/deepestButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mostWestButton"
+            android:layout_toRightOf="@+id/deepestImage"
+            android:layout_alignBottom="@id/deepestImage"
+            android:layout_alignParentRight="true"
+            android:text="Location: Test Test Test \n Lat/Long: 30, 30 \n Magnitude: 1.2 \n Depth: 6km"
+            android:textSize="10dp"/>
+
+        <ImageView
+            android:id="@+id/shallowestImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/deepestImage"
+            app:srcCompat="@drawable/shallowest_earthquake"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/shallowestImage"
+            android:layout_alignLeft="@id/shallowestImage"
+            android:layout_alignRight="@id/shallowestImage"
+            android:layout_alignBottom="@id/shallowestImage"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:text="Shallowest"
+            android:textSize="10dp"
+            android:textColor="@color/White"
+            />
+
+        <Button
+            android:id="@+id/shallowestButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/deepestButton"
+            android:layout_toRightOf="@+id/shallowestImage"
+            android:layout_alignBottom="@id/shallowestImage"
+            android:layout_alignParentRight="true"
+            android:text="Location: Test Test Test \n Lat/Long: 30, 30 \n Magnitude: 1.2 \n Depth: 6km"
+            android:textSize="10dp"/>
+        <Button
+            android:id="@+id/returnDate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/acknowledgmentDatePicker"
+            android:layout_below="@id/shallowestButton"
+            android:text="Return to List"/>
+
+
+        <TextView
+            android:id="@+id/acknowledgmentDatePicker"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Contains British Geological Survey materials ©NERC 2019"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+
+</ViewFlipper>
